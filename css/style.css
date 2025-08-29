@@ -1,0 +1,330 @@
+/* Basic Styles */
+body {
+    background-color: #1a1a1a;
+    background-image: url('https://img.freepik.com/free-vector/digital-connection-background-with-abstract-glowing-lines_1017-32169.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #000000;
+    padding: 1rem;
+    border-bottom: 1px solid #00ffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.intro, .overview, .ai-powered {
+    padding: 2rem;
+    text-align: center;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #00ffff;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #00ffff;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #00ffff;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.ai-powered ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ai-powered li {
+    background-color: #2a2a2a;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #00ffff;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #00ffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.store-intro, .products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    color: #00ffff;
+    margin-top: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.payment-options {
+    margin-top: 1rem;
+}
+
+.payment-options img {
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+.blog-posts, .newsletter {
+    padding: 2rem;
+    text-align: center;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.post-card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    text-align: left;
+}
+
+.post-card h3 {
+    color: #00ffff;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.newsletter input {
+    padding: 0.8rem;
+    border: 1px solid #00ffff;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    border-radius: 0 5px 5px 0;
+}
+
+.services, .booking {
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.service-card h3 {
+    color: #00ffff;
+}
+
+.contact-form, .contact-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #00ffff;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+.policy-content h2, .policy-content h3 {
+    color: #00ffff;
+}
+
+.policy-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.policy-content ul li {
+    margin-bottom: 1rem;
+}
+
+/* Chatbot Styles */
+.chatbot {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.chatbot-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #00ffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.chatbot-window {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background-color: #1a1a1a;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    padding: 1rem;
+    display: none; /* Initially hidden */
+}
